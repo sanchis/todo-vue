@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/todo-vue/',
+  publicPath: '',
   css: {
     loaderOptions: {
       sass: {
