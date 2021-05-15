@@ -1,0 +1,62 @@
+{
+  "name": "emobg",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit --verbose --coverage",
+    "test:unit:watch": "vue-cli-service test:unit --watch"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "core-js": "2.6.5",
+    "glob": "7.1.6",
+    "lodash": "^4.17.21",
+    "path": "0.12.7",
+    "typed-vuex": "^0.1.22",
+    "uuid": "^8.3.2",
+    "vue": "2.6.12",
+    "vue-class-component": "7.2.6",
+    "vue-property-decorator": "9.1.2",
+    "vue-router": "3.5.1",
+    "vuex": "3.6.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@types/lodash": "^4.14.168",
+    "@types/uuid": "^8.3.0",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-typescript": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "@vue/test-utils": "~1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "~10.1.0",
+    "eslint": "~7.20.0",
+    "eslint-plugin-vue": "~7.6.0",
+    "lint-staged": "~10.5.0",
+    "node-sass": "~4.14.0",
+    "sass-loader": "^7.1.0",
+    "sass-true": "~5.0.0",
+    "ts-jest": "~23.0.0",
+    "typescript": "<3.6.0",
+    "vue-template-compiler": "2.6.12"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
+  }
+}
